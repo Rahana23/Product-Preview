@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Product preview card component</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+
+    </style>
+  </head>
+  <body>
+    <div class="product-card">
+      <div class="card-container">
+        <div class="card-img"></div>
+      <div class="product-info">
+        <p class="product-name">Perfume</p>
+        <h1 class="product-title">Gabrielle <br> 
+          Essence Eau <br> 
+          De Parfum</h1>
+        <p class="product-description">
+          A floral, solar and voluptuous interpretation composed by Olivier
+          Polge, Perfumer-Creator for the House of CHANEL.
+        </p>
+        <div class="price-container">
+          <h1>$149.99</h1>
+          <p>169.99</p>
+        </div>
+        <button id="product-button">
+          <img src="./images/icon-cart.svg" alt="Cart">
+          <p>Add to Cart</p>
+        </button>
+      </div>
+      </div>
+      
+    </div>
+
+    <footer class="attribution">
+      <span>Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a>.</span>
+      
+      
+      <span>Coded by  <a href="https://github.com/Rahana23">Rahana Suleiman </a></span>
+    </footer>
+      
+
+    <script>
+      const button = document.getElementById("product-button");
+      button.addEventListener("click", function () {
+        alert("Product added to cart!");
+      });
+      
+    </script>
+  </body>
+</html>
